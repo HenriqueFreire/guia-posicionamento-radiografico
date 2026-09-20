@@ -63,8 +63,6 @@ export function App() {
       <Header
         busca={busca}
         onMudarBusca={setBusca}
-        regiaoSelecionada={regiaoSelecionada}
-        onSelecionarRegiao={setRegiaoSelecionada}
         tipoSelecionado={tipoSelecionado}
         onSelecionarTipo={setTipoSelecionado}
         totalFiltrados={incidenciasFiltradas.length}
