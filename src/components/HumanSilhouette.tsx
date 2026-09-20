@@ -46,7 +46,7 @@ export const HumanSilhouette: React.FC<HumanSilhouetteProps> = ({
         </div>
 
         <svg
-          viewBox="0 0 200 380"
+          viewBox="-30 0 260 380"
           className="w-full h-full drop-shadow-[0_0_15px_rgba(6,182,212,0.15)] select-none"
           xmlns="http://www.w3.org/2000/svg"
         >
