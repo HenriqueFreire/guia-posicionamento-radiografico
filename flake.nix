@@ -31,6 +31,7 @@
             typescript
             typescript-language-server
             git
+            chromium
           ];
 
           shellHook = ''
