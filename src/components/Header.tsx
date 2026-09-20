@@ -1,20 +1,15 @@
 import React from 'react';
 import { Search, Bone, X } from 'lucide-react';
-import { TipoIncidencia } from '../types/radiologia';
 
 interface HeaderProps {
   busca: string;
   onMudarBusca: (termo: string) => void;
-  tipoSelecionado: TipoIncidencia | 'TODOS';
-  onSelecionarTipo: (tipo: TipoIncidencia | 'TODOS') => void;
   totalFiltrados: number;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   busca,
   onMudarBusca,
-  tipoSelecionado,
-  onSelecionarTipo,
   totalFiltrados,
 }) => {
   return (
@@ -46,48 +41,24 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
-        {/* Barra de Busca e Filtro de Tipo */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
-          {/* Barra de Busca Instantânea */}
-          <div className="relative flex-1">
-            <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input
-              type="text"
-              value={busca}
-              onChange={(e) => onMudarBusca(e.target.value)}
-              placeholder="Buscar por incidência, estrutura ou epônimo (ex: escafoide, ombro y, mortise, farill, joelho)..."
-              className="w-full pl-10 pr-10 py-2.5 bg-radiology-dark border border-radiology-border rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
-            />
-            {busca && (
-              <button
-                onClick={() => onMudarBusca('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-1"
-              >
-                <X size={16} />
-              </button>
-            )}
-          </div>
-
-          {/* Tipo (Rotina vs Especial) */}
-          <div className="flex items-center gap-1.5 shrink-0 overflow-x-auto text-xs pb-1 sm:pb-0">
-            {(['TODOS', 'Rotina', 'Especial / Trauma'] as const).map((t) => {
-              const ativo = tipoSelecionado === t;
-              return (
-                <button
-                  key={t}
-                  type="button"
-                  onClick={() => onSelecionarTipo(t)}
-                  className={`px-3 py-2 rounded-xl font-semibold whitespace-nowrap transition-all border ${
-                    ativo
-                      ? 'bg-slate-700 text-white border-slate-500 shadow-sm'
-                      : 'bg-radiology-dark text-slate-400 border-radiology-border hover:text-slate-200 hover:border-slate-600'
-                  }`}
-                >
-                  {t === 'TODOS' ? 'Todos os Tipos' : t}
-                </button>
-              );
-            })}
-          </div>
+        {/* Barra de Busca Instantânea (Largura Total) */}
+        <div className="relative">
+          <Search size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+          <input
+            type="text"
+            value={busca}
+            onChange={(e) => onMudarBusca(e.target.value)}
+            placeholder="Buscar por incidência, estrutura ou epônimo (ex: escafoide, ombro y, mortise, farill, joelho)..."
+            className="w-full pl-10 pr-10 py-2.5 bg-radiology-dark border border-radiology-border rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
+          />
+          {busca && (
+            <button
+              onClick={() => onMudarBusca('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-1"
+            >
+              <X size={16} />
+            </button>
+          )}
         </div>
       </div>
     </header>

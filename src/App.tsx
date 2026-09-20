@@ -4,12 +4,11 @@ import { HumanSilhouette } from './components/HumanSilhouette';
 import { CardIncidencia } from './components/CardIncidencia';
 import { ModalCalculadora } from './components/ModalCalculadora';
 import { INCIDENCIAS } from './data/incidencias';
-import { RegiaoAnatomica, TipoIncidencia, IncidenciaRadiografica, ParametrosCalculados } from './types/radiologia';
+import { RegiaoAnatomica, IncidenciaRadiografica, ParametrosCalculados } from './types/radiologia';
 import { Sparkles, Layers } from 'lucide-react';
 
 export function App() {
   const [regiaoSelecionada, setRegiaoSelecionada] = useState<RegiaoAnatomica | 'TODOS'>('TODOS');
-  const [tipoSelecionado, setTipoSelecionado] = useState<TipoIncidencia | 'TODOS'>('TODOS');
   const [busca, setBusca] = useState<string>('');
 
   // Estado do Modal da Calculadora
@@ -25,11 +24,8 @@ export function App() {
   // Filtragem dos exames
   const incidenciasFiltradas = useMemo(() => {
     return INCIDENCIAS.filter((item) => {
-      // Filtro de Região (selecionado via silhueta ou pílula)
+      // Filtro de Região (selecionado via silhueta anatômica)
       const matchRegiao = regiaoSelecionada === 'TODOS' || item.regiao === regiaoSelecionada;
-
-      // Filtro de Tipo (Rotina vs Especial)
-      const matchTipo = tipoSelecionado === 'TODOS' || item.tipo === tipoSelecionado;
 
       // Busca textual
       const termo = busca.toLowerCase().trim();
@@ -41,9 +37,9 @@ export function App() {
         item.raioCentral.toLowerCase().includes(termo) ||
         item.criteriosBontrager.toLowerCase().includes(termo);
 
-      return matchRegiao && matchTipo && matchTexto;
+      return matchRegiao && matchTexto;
     });
-  }, [regiaoSelecionada, tipoSelecionado, busca]);
+  }, [regiaoSelecionada, busca]);
 
   const handleAbrirCalculadora = (incidencia: IncidenciaRadiografica) => {
     setIncidenciaAtiva(incidencia);
@@ -63,8 +59,6 @@ export function App() {
       <Header
         busca={busca}
         onMudarBusca={setBusca}
-        tipoSelecionado={tipoSelecionado}
-        onSelecionarTipo={setTipoSelecionado}
         totalFiltrados={incidenciasFiltradas.length}
       />
 
@@ -146,7 +140,6 @@ export function App() {
                   onClick={() => {
                     setBusca('');
                     setRegiaoSelecionada('TODOS');
-                    setTipoSelecionado('TODOS');
                   }}
                   className="mt-3 px-4 py-2 rounded-xl text-xs font-bold bg-cyan-600 hover:bg-cyan-500 text-white transition-colors"
                 >
