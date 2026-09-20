@@ -18,8 +18,6 @@ export function App() {
   // Parâmetros customizados por exame aplicados pelo usuário
   const [customParams, setCustomParams] = useState<Record<string, { params: ParametrosCalculados; espessura: number }>>({});
 
-  // Constante padrão recuperada do localStorage
-  const constantePadrao = parseInt(localStorage.getItem('rx_constante_c') || '25', 10);
 
   // Filtragem dos exames
   const incidenciasFiltradas = useMemo(() => {
@@ -122,7 +120,6 @@ export function App() {
                     key={item.id}
                     incidencia={item}
                     parametrosCustomizados={customParams[item.id]}
-                    constantePadrao={constantePadrao}
                     onAbrirCalculadora={handleAbrirCalculadora}
                   />
                 ))}
