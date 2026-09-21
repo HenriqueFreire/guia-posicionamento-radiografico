@@ -10,7 +10,7 @@ export interface IncidenciaRadiografica {
   id: string;
   nome: string;
   regiao: RegiaoAnatomica;
-  subregiao: string; // Ex: "Mão e Dedos", "Punho", "Cotovelo", "Ombro", "Joelho", "Pé e Tornozelo", "Pelve e Quadril"
+  subregiao: string; // Ex: "Mão", "Polegar", "Punho", "Cotovelo", "Ombro", "Clavícula", "Joelho", "Fêmur", "Pelve", "Quadril"
   tipo: TipoIncidencia;
   
   // Parâmetros Físicos e Geométricos
