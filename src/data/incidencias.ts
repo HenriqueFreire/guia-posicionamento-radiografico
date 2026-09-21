@@ -244,6 +244,22 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'A rotação externa deve partir de toda a articulação do ombro com a palma da mão voltada para a frente, e não apenas do punho.'
   },
   {
+    id: 'ombro-perfil-neer',
+    nome: 'Ombro / Escápula — Saída do Supraespinhoso (Método de Neer)',
+    regiao: 'MMSS',
+    subregiao: 'Ombro e Clavícula',
+    tipo: 'Rotina',
+    espessuraMediaCm: 14,
+    masBase: 18.0,
+    dffCm: 100,
+    tamanhoChassi: '24×30 cm longitudinal (com grade)',
+    gradeRecomendada: true,
+    raioCentral: 'Angulado de 10° a 15° caudal, incidindo na face póstero-superior do ombro (passando sob o acrômio em direção à cabeça umeral).',
+    posicionamento: 'Paciente em ortostase obliquado de 45° a 60° (OAD ou OAE com ombro afetado encostado na estativa). Plano do corpo da escápula perpendicular ao receptor. Braço relaxado junto ao tronco.',
+    criteriosBontrager: 'Acrômio e processo coracoide formando as hastes superiores e o corpo da escápula formando a haste vertical do Y. Espaço subacromial aberto sob o arco coracoacromial e cabeça umeral centralizada.',
+    dicaPratica: 'A inclinação de 15° caudal é o diferencial do método de Neer: ela corre tangencialmente à borda inferior do acrômio, abrindo o túnel do supraespinhoso para classificar a curvatura do acrômio (Bigliani).'
+  },
+  {
     id: 'clavicula-ap-axial',
     nome: 'Clavícula — AP e AP Axial',
     regiao: 'Cintura & Tórax',
