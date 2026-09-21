@@ -20,7 +20,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Visualização completa dos 27 ossos da mão e punho distal. Falanges e metacarpos sem rotação (diáfises simétricas). Espaços articulares MCF e interfalângicos abertos.',
     dicaPratica: 'Mantenha os dedos suavemente abertos e paralelos ao filme para não fechar espaços interfalângicos.',
     imagemPosicionamento: '/images/posicionamentos/mao-pa.jpg',
-    imagemRadiografia: '/images/posicionamentos/mao-pa-rx.jpg'
   },
   {
     id: 'mao-obliqua',
@@ -38,7 +37,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Separação adequada dos corpos dos metacarpos do 3º ao 5º sem sobreposição excessiva. Fundamental para descartar fraturas espirais e fratura do boxeador.',
     dicaPratica: 'Se o paciente não conseguir sustentar os 45°, apoie as pontas dos dedos em uma cunha de isopor ou espuma.',
     imagemPosicionamento: '/images/posicionamentos/mao-obliqua.jpg',
-    imagemRadiografia: '/images/posicionamentos/mao-obliqua-rx.jpg'
   },
   {
     id: 'mao-perfil-leque',
@@ -55,7 +53,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     posicionamento: 'Mão em perfil estrito a 90° (borda ulnar apoiada). Dedos abertos em leque sustentados por bloco radiotransparente para que nenhuma falange fique sobreposta.',
     criteriosBontrager: 'Falanges individualizadas em perfil verdadeiro. Metacarpos sobrepostos na maior parte de seus corpos, mas cabeças e bases visíveis para descartar luxações dorso-volares.',
     imagemPosicionamento: '/images/posicionamentos/mao-perfil-leque.jpg',
-    imagemRadiografia: '/images/posicionamentos/mao-perfil-leque-rx.jpg'
   },
   {
     id: 'polegar-ap',
@@ -73,7 +70,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Falanges distal e proximal e 1º metacarpo em AP verdadeiro sem rotação. Articulações interfalângica e metacarpofalângica abertas.',
     dicaPratica: 'Se o paciente apresentar limitação articular na rotação interna do punho, incline ligeiramente o chassi com um coxim para facilitar o apoio dorsal.',
     imagemPosicionamento: '/images/posicionamentos/polegar-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/polegar-ap-rx.jpg'
   },
   {
     id: 'polegar-obliqua',
@@ -91,7 +87,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Polegar obliquado a 45°. Tecidos moles e ossos da falange distal, proximal e metacarpo demonstrados sem sobreposição dos outros dedos.',
     dicaPratica: 'O repouso natural da mão espalmada sobre a mesa posiciona o polegar a 45° sem necessidade de rotação forçada.',
     imagemPosicionamento: '/images/posicionamentos/polegar-obliqua.jpg',
-    imagemRadiografia: '/images/posicionamentos/polegar-obliqua-rx.jpg'
   },
   {
     id: 'polegar-perfil',
@@ -109,7 +104,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Polegar em perfil verdadeiro com aspecto côncavo da superfície palmar das falanges. Espaços articulares interfalângico e MCF abertos.',
     dicaPratica: 'Flexionar suavemente os dedos restantes em forma de arco sustenta o polegar em perfil sem oscilação.',
     imagemPosicionamento: '/images/posicionamentos/polegar-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/polegar-perfil-rx.jpg'
   },
   {
     id: 'punho-pa',
@@ -127,7 +121,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Extremidade distal do rádio e ulna, 8 ossos do carpo e terço proximal dos metacarpos. Ausência de rotação dos ossos do antebraço distal.',
     dicaPratica: 'Flexionar suavemente os dedos em semicúpula faz o carpo assentar diretamente no chassi, diminuindo a distorção por ampliação.',
     imagemPosicionamento: '/images/posicionamentos/punho-pa.jpg',
-    imagemRadiografia: '/images/posicionamentos/punho-pa-rx.jpg'
   },
   {
     id: 'punho-perfil',
@@ -145,7 +138,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Sobreposição exata dos processos estiloides do rádio e da ulna. Rádio distal, semilunar e capitato alinhados no mesmo eixo longitudinal.',
     dicaPratica: 'O ombro, o cotovelo e o punho devem estar estritamente na mesma altura do plano da mesa.',
     imagemPosicionamento: '/images/posicionamentos/punho-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/punho-perfil-rx.jpg'
   },
   {
     id: 'antebraco-ap',
@@ -163,7 +155,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Inclusão obrigatória de ambas as articulações (cotovelo e punho). Rádio e ulna paralelos sem cruzamento diáfisário.',
     dicaPratica: 'Se a mão estiver em pronação, o rádio cruza por cima da ulna e invalida o AP verdadeiro.',
     imagemPosicionamento: '/images/posicionamentos/antebraco-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/antebraco-ap-rx.jpg'
   },
   {
     id: 'antebraco-perfil',
@@ -181,7 +172,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Inclusão de ambas as articulações (cotovelo e punho). Rádio distal sobreposto à ulna distal e cabeça da ulna sobreposta ao rádio.',
     dicaPratica: 'Ombro, cotovelo e punho devem estar exatamente no mesmo plano da mesa para evitar qualquer rotação no antebraço.',
     imagemPosicionamento: '/images/posicionamentos/antebraco-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/antebraco-perfil-rx.jpg'
   },
   {
     id: 'cotovelo-ap',
@@ -199,7 +189,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Espaço articular úmero-radial e úmero-ulnar aberto. Cabeça e colo do rádio livres de sobreposição excessiva da ulna.',
     dicaPratica: 'Se o paciente não conseguir estender o cotovelo no trauma, realize dois APs parciais: um apoiando o braço e outro apoiando o antebraço.',
     imagemPosicionamento: '/images/posicionamentos/cotovelo-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/cotovelo-ap-rx.jpg'
   },
   {
     id: 'cotovelo-perfil',
@@ -217,7 +206,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Epicôndilos umerais perfeitamente sobrepostos. Olécrano em perfil estrito. Visualização dos coxins adiposos (sinal da vela/hemartrose).',
     dicaPratica: 'A flexão a 90° é indispensável para relaxar a cápsula articular e permitir a detecção de derrame articular nos coxins gordurosos.',
     imagemPosicionamento: '/images/posicionamentos/cotovelo-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/cotovelo-perfil-rx.jpg'
   },
   {
     id: 'ombro-ap-neutro',
@@ -235,7 +223,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Cavidade glenoide e cabeça umeral demonstradas com espaço articular aberto no método de Grashey. Tubérculos umerais demonstrados.',
     dicaPratica: 'Rodar o corpo 35° a 45° em direção ao lado examinado projeta a glenoide de perfil sem sobreposição da cabeça do úmero.',
     imagemPosicionamento: '/images/posicionamentos/ombro-ap-neutro.jpg',
-    imagemRadiografia: '/images/posicionamentos/ombro-ap-neutro-rx.jpg'
   },
   {
     id: 'ombro-rotacao-interna',
@@ -253,7 +240,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Tubérculo menor projetado em perfil medial completo. Tubérculo maior sobreposto à cabeça do úmero. Contorno da cabeça umeral sobre a cavidade glenoide.',
     dicaPratica: 'Garantir que os epicôndilos fiquem perpendiculares ao receptor de imagem é essencial para colocar o tubérculo menor em perfil verdadeiro.',
     imagemPosicionamento: '/images/posicionamentos/ombro-rotacao-interna.jpg',
-    imagemRadiografia: '/images/posicionamentos/ombro-rotacao-interna-rx.jpg'
   },
   {
     id: 'ombro-rotacao-externa',
@@ -271,7 +257,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Tubérculo maior projetado em perfil lateral completo da cabeça do úmero. Espaço articular escapuloumeral aberto e tubérculo menor sobreposto anteriormente.',
     dicaPratica: 'A rotação externa deve partir de toda a articulação do ombro com a palma da mão voltada para a frente, e não apenas do punho.',
     imagemPosicionamento: '/images/posicionamentos/ombro-rotacao-externa.jpg',
-    imagemRadiografia: '/images/posicionamentos/ombro-rotacao-externa-rx.jpg'
   },
   {
     id: 'ombro-perfil-neer',
@@ -289,7 +274,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Acrômio e processo coracoide formando as hastes superiores e o corpo da escápula formando a haste vertical do Y. Espaço subacromial aberto sob o arco coracoacromial e cabeça umeral centralizada.',
     dicaPratica: 'A inclinação de 15° caudal é o diferencial do método de Neer: ela corre tangencialmente à borda inferior do acrômio, abrindo o túnel do supraespinhoso para classificar a curvatura do acrômio (Bigliani).',
     imagemPosicionamento: '/images/posicionamentos/ombro-perfil-neer.jpg',
-    imagemRadiografia: '/images/posicionamentos/ombro-perfil-neer-rx.jpg'
   },
   {
     id: 'ombro-axial-lawrence',
@@ -307,7 +291,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Articulação escapuloumeral aberta em vista axial. Relação frontal e dorsal da cabeça umeral com a cavidade glenoide (descarte de luxações anteriores e posteriores). Coracoide apontando anteriormente e acrômio lateralmente.',
     dicaPratica: 'Contraindicado em pacientes com suspeita de luxação aguda antes de descartá-la no AP. Caso o paciente tenha dor na abdução completa, abduza o membro a 45° mantendo a angulação do feixe.',
     imagemPosicionamento: '/images/posicionamentos/ombro-axial-lawrence.jpg',
-    imagemRadiografia: '/images/posicionamentos/ombro-axial-lawrence-rx.jpg'
   },
   {
     id: 'clavicula-ap',
@@ -325,7 +308,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Clavícula demonstrada por inteiro, incluindo as articulações acromioclavicular (lateral) e esternoclavicular (medial). Metade medial projetada sobre os arcos costais superiores.',
     dicaPratica: 'Realizar o disparo em expiração completa abaixa o gradil costal e melhora a nitidez e o contraste das corticais da clavícula.',
     imagemPosicionamento: '/images/posicionamentos/clavicula-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/clavicula-ap-rx.jpg'
   },
   {
     id: 'clavicula-axial',
@@ -343,7 +325,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Clavícula projetada quase inteiramente acima dos arcos costais e do ápice pulmonar, permitindo visualizar fraturas sem sobreposição óssea.',
     dicaPratica: 'Biotipos brevilíneos geralmente ficam bem com 25°–30°. Biotipos longilíneos podem precisar de apenas 15°–20° cefálico — ajuste sempre para projetar a clavícula acima dos arcos costais.',
     imagemPosicionamento: '/images/posicionamentos/clavicula-axial.jpg',
-    imagemRadiografia: '/images/posicionamentos/clavicula-axial-rx.jpg'
   },
 
   // ==========================================
@@ -365,7 +346,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Metatarsos do 1º ao 5º, cuneiformes, cuboide e navicular. Espaços articulares tarsometatarsais (Linha de Lisfranc) desobstruídos.',
     dicaPratica: 'Se o paciente tiver o arco plantar muito alto (pé cavo), aumente a angulação do RC para 15°.',
     imagemPosicionamento: '/images/posicionamentos/pe-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/pe-ap-rx.jpg'
   },
   {
     id: 'pe-obliqua-medial',
@@ -383,7 +363,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Cuboide e articulações tarsais laterais livres. Tuberosidade e base do 5º metatarso projetadas de perfil (fundamental para Fratura de Jones).',
     dicaPratica: 'Não exagere na rotação além de 40°, senão os metatarsos sobrepõem-se e escondem a articulação de Lisfranc.',
     imagemPosicionamento: '/images/posicionamentos/pe-obliqua-medial.jpg',
-    imagemRadiografia: '/images/posicionamentos/pe-obliqua-medial-rx.jpg'
   },
   {
     id: 'calcaneo-axial',
@@ -401,11 +380,10 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Calcâneo demonstrado da tuberosidade ao sustentáculo do tálus sem rotação. Articulação talocalcânea aberta.',
     dicaPratica: 'Se o paciente não conseguir fletir o pé a 90°, aumente a angulação do raio central além de 40° proporcionalmente.',
     imagemPosicionamento: '/images/posicionamentos/calcaneo-axial.jpg',
-    imagemRadiografia: '/images/posicionamentos/calcaneo-axial-rx.jpg'
   },
   {
     id: 'calcaneo-perfil',
-    nome: 'Calcâneo — Perfil (Látero-Medial)',
+    nome: 'Calcâneo — Perfil (Médio-Lateral)',
     regiao: 'MMII',
     subregiao: 'Calcâneo',
     tipo: 'Rotina',
@@ -414,16 +392,15 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dffCm: 100,
     tamanhoChassi: '18×24 cm longitudinal dividido',
     gradeRecomendada: false,
-    raioCentral: 'Perpendicular, incidindo 2,5 cm inferior e anterior ao maléolo lateral, no centro do calcâneo.',
+    raioCentral: 'Perpendicular, incidindo 2,5 cm inferior ao maléolo medial, no centro do calcâneo.',
     posicionamento: 'Paciente em decúbito lateral sobre o lado afetado. Joelho flexionado a 45°, pé em dorsiflexão neutra a 90° com a perna.',
     criteriosBontrager: 'Calcâneo demonstrado integralmente em perfil, da tuberosidade à articulação calcaneocuboidea. Articulação subtalar e seio do tarso abertos.',
     dicaPratica: 'Manter o pé a 90° com a perna evita a sobreposição do maléolo lateral e abre o seio do tarso para avaliação do Ângulo de Böhler.',
     imagemPosicionamento: '/images/posicionamentos/calcaneo-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/calcaneo-perfil-rx.jpg'
   },
   {
-    id: 'tornozelo-ap-mortise',
-    nome: 'Tornozelo — AP de Encaixe (Mortise / 15°-20°)',
+    id: 'tornozelo-ap',
+    nome: 'Tornozelo — AP',
     regiao: 'MMII',
     subregiao: 'Tornozelo',
     tipo: 'Rotina',
@@ -433,15 +410,14 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     tamanhoChassi: '18×24 cm ou 24×30 cm dividido',
     gradeRecomendada: false,
     raioCentral: 'Perpendicular, incidindo no ponto médio entre os maléolos medial e lateral.',
-    posicionamento: 'Perna estendida, membro rodado internamente de 15° a 20° para posicionar a linha intermaleolar paralela ao filme.',
-    criteriosBontrager: 'Abertura total da pinça maleolar (Mortise). Espaço articular talocrural lateral, medial e superior simétrico e sem sobreposição da fíbula.',
-    dicaPratica: 'A rotação interna de 15° a 20° é a chave: sem ela, a fíbula distal sobrepõe o tálus e esconde lesões sindesmais.',
-    imagemPosicionamento: '/images/posicionamentos/tornozelo-ap-mortise.jpg',
-    imagemRadiografia: '/images/posicionamentos/tornozelo-ap-mortise-rx.jpg'
+    posicionamento: 'Paciente em decúbito dorsal ou sentado na mesa, perna estendida. Tornozelo em posição frontal verdadeira (sem rotação), com o pé em dorsiflexão natural a 90° em relação à perna.',
+    criteriosBontrager: 'Articulação tibiotalar medial e superior aberta. Fíbula distal normalmente sobreposta à porção lateral da tíbia e do tálus. Maléolos medial e lateral visíveis.',
+    dicaPratica: 'No AP verdadeiro sem rotação, a sobreposição da fíbula sobre o tálus lateralmente é normal. Não rode o membro internamente aqui (a rotação de 15°-20° é exclusiva da Mortise).',
+    imagemPosicionamento: '/images/posicionamentos/tornozelo-ap.jpg',
   },
   {
     id: 'tornozelo-perfil',
-    nome: 'Tornozelo — Perfil Látero-Medial',
+    nome: 'Tornozelo — Perfil Médio-Lateral',
     regiao: 'MMII',
     subregiao: 'Tornozelo',
     tipo: 'Rotina',
@@ -455,7 +431,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Articulação tíbio-talar aberta em perfil. Fíbula distal projetada sobre a metade posterior da tíbia distal. Base do 5º metatarso incluída.',
     dicaPratica: 'Sempre inclua a base do 5º metatarso no campo de colimação do perfil de tornozelo para descartar fratura por avulsão.',
     imagemPosicionamento: '/images/posicionamentos/tornozelo-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/tornozelo-perfil-rx.jpg'
   },
   {
     id: 'perna-ap-perfil',
@@ -473,7 +448,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Inclusão mandatória das duas articulações (joelho e tornozelo). Tíbia e fíbula completas para identificar fraturas em múltiplos níveis.',
     dicaPratica: 'Em pacientes altos, posicione o chassi diagonalmente no suporte para conseguir incluir joelho e tornozelo no mesmo filme.',
     imagemPosicionamento: '/images/posicionamentos/perna-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/perna-ap-rx.jpg'
   },
   {
     id: 'joelho-ap',
@@ -491,7 +465,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Espaço articular femorotibial medial e lateral simétrico e aberto. Patela centralizada entre os côndilos femorais.',
     dicaPratica: 'A rotação interna discreta de 3° a 5° evita a rotação externa natural do pé e alinha os côndilos femorais.',
     imagemPosicionamento: '/images/posicionamentos/joelho-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/joelho-ap-rx.jpg'
   },
   {
     id: 'joelho-perfil',
@@ -509,7 +482,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Côndilos femorais sobrepostos. Articulação patelofemoral aberta em perfil estrito. Espaço femorotibial desobstruído.',
     dicaPratica: 'A angulação cefálica de 5° a 7° é essencial para alinhar as bordas inferiores dos côndilos medial e lateral.',
     imagemPosicionamento: '/images/posicionamentos/joelho-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/joelho-perfil-rx.jpg'
   },
   {
     id: 'femur-ap',
@@ -527,7 +499,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Diáfise femoral demonstrada em projeção frontal sem rotação. Pelo menos uma das articulações (joelho ou quadril) incluída a partir da margem do filme.',
     dicaPratica: 'Em adultos altos, um único chassi de 35×43 cm pode não cobrir ambas as articulações; priorize a articulação mais próxima do local da lesão e faça o complemento da outra.',
     imagemPosicionamento: '/images/posicionamentos/femur-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/femur-ap-rx.jpg'
   },
   {
     id: 'femur-perfil',
@@ -545,7 +516,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Côndilos femorais sobrepostos demonstrando perfil verdadeiro da porção distal. Pelo menos uma articulação demonstrada sem sobreposição da perna contralateral.',
     dicaPratica: 'Em pacientes vítimas de trauma agudo com suspeita de fratura diafisária, NUNCA vire o paciente em decúbito lateral; realize o perfil com feixe horizontal direto.',
     imagemPosicionamento: '/images/posicionamentos/femur-perfil.jpg',
-    imagemRadiografia: '/images/posicionamentos/femur-perfil-rx.jpg'
   },
   {
     id: 'pelve-ap',
@@ -563,7 +533,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Bacia simétrica (forames obturatórios e asas ilíacas espelhadas). Trocanteres maiores em perfil total e trocanteres menores encobertos pela rotação interna.',
     dicaPratica: 'A rotação interna dos pés esconde os trocanteres menores. Se eles estiverem muito visíveis, faltou rotação interna!',
     imagemPosicionamento: '/images/posicionamentos/pelve-ap.jpg',
-    imagemRadiografia: '/images/posicionamentos/pelve-ap-rx.jpg'
   },
   {
     id: 'quadril-frog-leg-cleaves',
@@ -581,6 +550,5 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'Colo femoral e cabeça do fêmur em perfil lateral. Trocanter menor projetado medialmente. Articulação coxofemoral aberta.',
     dicaPratica: 'Contraindicado em pacientes com suspeita de fratura ou luxação traumática aguda do quadril.',
     imagemPosicionamento: '/images/posicionamentos/quadril-frog-leg-cleaves.jpg',
-    imagemRadiografia: '/images/posicionamentos/quadril-frog-leg-cleaves-rx.jpg'
   }
 ];
