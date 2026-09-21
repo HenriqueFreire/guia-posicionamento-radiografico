@@ -267,23 +267,14 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
             <span>{copiado ? 'Copiado!' : 'Copiar Parâmetros'}</span>
           </button>
 
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={onClose}
-              className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-white transition-colors"
-            >
-              Cancelar
-            </button>
-            <button
-              type="button"
-              onClick={handleAplicar}
-              className="px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/20 transition-all flex items-center gap-1.5"
-            >
-              <Sparkles size={14} />
-              <span>Aplicar ao Card</span>
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={handleAplicar}
+            className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/20 transition-all flex items-center gap-1.5"
+          >
+            <Sparkles size={14} />
+            <span>Aplicar ao Card</span>
+          </button>
         </div>
       </div>
     </div>
