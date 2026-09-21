@@ -260,6 +260,22 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'A inclinação de 15° caudal é o diferencial do método de Neer: ela corre tangencialmente à borda inferior do acrômio, abrindo o túnel do supraespinhoso para classificar a curvatura do acrômio (Bigliani).'
   },
   {
+    id: 'ombro-axial-lawrence',
+    nome: 'Ombro — Axial Ínfero-Superior (Método de Lawrence)',
+    regiao: 'MMSS',
+    subregiao: 'Ombro e Clavícula',
+    tipo: 'Rotina',
+    espessuraMediaCm: 13,
+    masBase: 14.0,
+    dffCm: 100,
+    tamanhoChassi: '18×24 ou 24×30 cm transversal',
+    gradeRecomendada: false,
+    raioCentral: 'Angulado de 25° a 30° medialmente, incidindo horizontalmente na axila em direção à articulação escapuloumeral.',
+    posicionamento: 'Paciente em decúbito dorsal, ombro elevado em coxim radiotransparente (cerca de 5 cm). Braço abduzido a 90° com rotação externa e polegar apontado para cima. Chassi vertical apoiado acima do ombro.',
+    criteriosBontrager: 'Articulação escapuloumeral aberta em vista axial. Relação frontal e dorsal da cabeça umeral com a cavidade glenoide (descarte de luxações anteriores e posteriores). Coracoide apontando anteriormente e acrômio lateralmente.',
+    dicaPratica: 'Contraindicado em pacientes com suspeita de luxação aguda antes de descartá-la no AP. Caso o paciente tenha dor na abdução completa, abduza o membro a 45° mantendo a angulação do feixe.'
+  },
+  {
     id: 'clavicula-ap-axial',
     nome: 'Clavícula — AP e AP Axial',
     regiao: 'Cintura & Tórax',
