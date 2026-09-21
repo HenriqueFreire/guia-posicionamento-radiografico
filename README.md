@@ -1,5 +1,9 @@
 # ☢️ Guia de Posicionamento Radiográfico & Espessômetro Digital (PWA)
 
+[![Acessar WebApp](https://img.shields.io/badge/Acessar_WebApp-Online_no_GitHub_Pages-0891b2?style=for-the-badge&logo=githubpages&logoColor=white)](https://henriquefreire.github.io/guia-posicionamento-radiografico/)
+
+> 🌐 **Acesse online:** [https://henriquefreire.github.io/guia-posicionamento-radiografico/](https://henriquefreire.github.io/guia-posicionamento-radiografico/)
+
 Aplicativo web progressivo (**PWA**) moderno, responsivo e 100% offline-first desenvolvido com **React 19, TypeScript, Tailwind CSS e Vite**, projetado para servir como ferramenta de cabeceira de leito e sala de exames para estudantes e técnicos em radiologia.
 
 ---
@@ -56,7 +60,10 @@ pnpm dev
 
 ## 📦 Build e Publicação no GitHub Pages
 
-O build é automatizado via GitHub Actions a cada `git push` na branch `main`.
+O WebApp está publicado e pronto para uso em:
+👉 **[https://henriquefreire.github.io/guia-posicionamento-radiografico/](https://henriquefreire.github.io/guia-posicionamento-radiografico/)**
+
+O deploy é automatizado via GitHub Actions a cada `git push` na branch `main`.
 
 Para compilar manualmente:
 ```bash
