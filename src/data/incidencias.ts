@@ -408,8 +408,8 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'A angulação cefálica de 5° a 7° é essencial para alinhar as bordas inferiores dos côndilos medial e lateral.'
   },
   {
-    id: 'femur-ap-perfil',
-    nome: 'Fêmur — AP e Perfil (Terços Proximal e Distal)',
+    id: 'femur-ap',
+    nome: 'Fêmur — AP (Ântero-Posterior)',
     regiao: 'MMII',
     subregiao: 'Fêmur e Quadril',
     tipo: 'Rotina',
@@ -418,10 +418,26 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dffCm: 100,
     tamanhoChassi: '35×43 cm longitudinal (com grade Bucky)',
     gradeRecomendada: true,
-    raioCentral: 'Perpendicular centrado no ponto médio da diáfise femoral.',
-    posicionamento: 'No AP: perna rodada internamente 5°. No Perfil: paciente em decúbito lateral com joelho fletido a 45°. Se necessário, dividir em dois filmes.',
-    criteriosBontrager: 'Extensão total do fêmur com pelo menos uma das articulações incluída (joelho ou quadril). Trabéculas e corticais nítidas.',
-    dicaPratica: 'Em fraturas diafisárias de fêmur, sempre faça radiografias complementares do quadril e do joelho adjacentes.'
+    raioCentral: 'Perpendicular ao ponto médio da diáfise femoral e ao centro do receptor de imagem.',
+    posicionamento: 'Paciente em decúbito dorsal. Perna estendida com rotação interna de 5° para posicionar a linha intercondilar paralela à mesa (ou rotação interna de 15° se incluir o colo femoral proximal).',
+    criteriosBontrager: 'Diáfise femoral demonstrada em projeção frontal sem rotação. Pelo menos uma das articulações (joelho ou quadril) incluída a partir da margem do filme.',
+    dicaPratica: 'Em adultos altos, um único chassi de 35×43 cm pode não cobrir ambas as articulações; priorize a articulação mais próxima do local da lesão e faça o complemento da outra.'
+  },
+  {
+    id: 'femur-perfil',
+    nome: 'Fêmur — Perfil (Médio-Lateral)',
+    regiao: 'MMII',
+    subregiao: 'Fêmur e Quadril',
+    tipo: 'Rotina',
+    espessuraMediaCm: 16,
+    masBase: 20.0,
+    dffCm: 100,
+    tamanhoChassi: '35×43 cm longitudinal (com grade Bucky)',
+    gradeRecomendada: true,
+    raioCentral: 'Perpendicular ao ponto médio da diáfise do fêmur.',
+    posicionamento: 'Paciente em decúbito lateral sobre o lado afetado. Joelho flexionado a 45°, membro sadio posicionado posteriormente fora do trajeto do feixe de radiação.',
+    criteriosBontrager: 'Côndilos femorais sobrepostos demonstrando perfil verdadeiro da porção distal. Pelo menos uma articulação demonstrada sem sobreposição da perna contralateral.',
+    dicaPratica: 'Em pacientes vítimas de trauma agudo com suspeita de fratura diafisária, NUNCA vire o paciente em decúbito lateral; realize o perfil com feixe horizontal direto.'
   },
   {
     id: 'pelve-ap',
