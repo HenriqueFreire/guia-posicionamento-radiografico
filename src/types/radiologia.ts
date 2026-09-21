@@ -28,6 +28,10 @@ export interface IncidenciaRadiografica {
   criteriosBontrager: string;
   dicaPratica?: string;
   
+  // Recursos Visuais (Bontrager / Atlas Técnico)
+  imagemPosicionamento?: string; // Foto da parte alvo e incidência do Raio Central (RC)
+  imagemRadiografia?: string; // Imagem radiográfica de referência
+  
   // Metadados
   postBlogUrl?: string;
 }
