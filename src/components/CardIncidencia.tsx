@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { IncidenciaRadiografica, ParametrosCalculados } from '../types/radiologia';
 import { Calculator, Target, User, CheckCircle2, Lightbulb, ChevronDown, ChevronUp, Ruler, Sparkles, Maximize2, Image as ImageIcon } from 'lucide-react';
 import { ModalImagemPosicionamento } from './ModalImagemPosicionamento';
+import { resolveAssetUrl } from '../utils/assets';
 
 interface CardIncidenciaProps {
   incidencia: IncidenciaRadiografica;
@@ -34,7 +35,7 @@ export const CardIncidencia: React.FC<CardIncidenciaProps> = ({
               title="Clique para ampliar o atlas de posicionamento e raio-X"
             >
               <img
-                src={incidencia.imagemPosicionamento}
+                src={resolveAssetUrl(incidencia.imagemPosicionamento)}
                 alt={`Posicionamento - ${incidencia.nome}`}
                 onLoad={() => setImagemCarregada(true)}
                 className={`w-full h-full object-cover object-center transition-all duration-500 group-hover/img:scale-105 ${

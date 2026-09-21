@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IncidenciaRadiografica } from '../types/radiologia';
 import { X, Target, Sparkles, CheckCircle2, Ruler, Eye, SplitSquareHorizontal } from 'lucide-react';
+import { resolveAssetUrl } from '../utils/assets';
 
 interface ModalImagemPosicionamentoProps {
   incidencia: IncidenciaRadiografica | null;
@@ -131,7 +132,7 @@ export const ModalImagemPosicionamento: React.FC<ModalImagemPosicionamentoProps>
             <div className="flex flex-col items-center">
               <div className="relative group max-h-[48vh] rounded-xl overflow-hidden border border-cyan-500/30 bg-black/60 shadow-inner flex items-center justify-center">
                 <img
-                  src={incidencia.imagemPosicionamento}
+                  src={resolveAssetUrl(incidencia.imagemPosicionamento)}
                   alt={`Posicionamento - ${incidencia.nome}`}
                   className="max-h-[48vh] w-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.02]"
                 />
@@ -147,7 +148,7 @@ export const ModalImagemPosicionamento: React.FC<ModalImagemPosicionamentoProps>
             <div className="flex flex-col items-center">
               <div className="relative group max-h-[48vh] rounded-xl overflow-hidden border border-emerald-500/30 bg-black/80 shadow-inner flex items-center justify-center">
                 <img
-                  src={incidencia.imagemRadiografia}
+                  src={resolveAssetUrl(incidencia.imagemRadiografia)}
                   alt={`Radiografia - ${incidencia.nome}`}
                   className="max-h-[48vh] w-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.02]"
                 />
@@ -168,7 +169,7 @@ export const ModalImagemPosicionamento: React.FC<ModalImagemPosicionamentoProps>
                 </span>
                 <div className="relative w-full max-h-[44vh] rounded-xl overflow-hidden border border-cyan-500/30 bg-black/60 shadow-inner flex items-center justify-center p-1">
                   <img
-                    src={incidencia.imagemPosicionamento}
+                    src={resolveAssetUrl(incidencia.imagemPosicionamento)}
                     alt={`Posicionamento - ${incidencia.nome}`}
                     className="max-h-[42vh] w-auto object-contain rounded-lg"
                   />
@@ -182,7 +183,7 @@ export const ModalImagemPosicionamento: React.FC<ModalImagemPosicionamentoProps>
                 </span>
                 <div className="relative w-full max-h-[44vh] rounded-xl overflow-hidden border border-emerald-500/30 bg-black/80 shadow-inner flex items-center justify-center p-1">
                   <img
-                    src={incidencia.imagemRadiografia}
+                    src={resolveAssetUrl(incidencia.imagemRadiografia)}
                     alt={`Radiografia - ${incidencia.nome}`}
                     className="max-h-[42vh] w-auto object-contain rounded-lg"
                   />
