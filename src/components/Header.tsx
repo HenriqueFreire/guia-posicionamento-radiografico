@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
             type="text"
             value={busca}
             onChange={(e) => onMudarBusca(e.target.value)}
-            placeholder="Buscar por incidência, estrutura ou epônimo (ex: escafoide, ombro y, mortise, farill, joelho)..."
+            placeholder="Buscar por incidência, estrutura ou osso (ex: punho, antebraço, joelho, fêmur, bacia)..."
             className="w-full pl-10 pr-10 py-2.5 bg-radiology-dark border border-radiology-border rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
           />
           {busca && (

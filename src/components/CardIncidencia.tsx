@@ -23,22 +23,12 @@ export const CardIncidencia: React.FC<CardIncidenciaProps> = ({
     <article className="bg-radiology-dark/90 border border-radiology-border rounded-2xl p-5 flex flex-col justify-between shadow-lg hover:shadow-cyan-950/30 hover:border-cyan-500/40 transition-all duration-300">
       <div>
         {/* Badges de Categoria */}
-        <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-cyan-950/80 text-cyan-300 border border-cyan-800/60">
-              {incidencia.regiao}
-            </span>
-            <span className="text-[10px] font-semibold text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
-              {incidencia.subregiao}
-            </span>
-          </div>
-
-          <span className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded border ${
-            incidencia.tipo === 'Rotina'
-              ? 'bg-emerald-950/70 text-emerald-300 border-emerald-800/50'
-              : 'bg-amber-950/70 text-amber-300 border-amber-800/50'
-          }`}>
-            {incidencia.tipo}
+        <div className="flex items-center gap-1.5 mb-2 flex-wrap">
+          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-cyan-950/80 text-cyan-300 border border-cyan-800/60">
+            {incidencia.regiao}
+          </span>
+          <span className="text-[10px] font-semibold text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
+            {incidencia.subregiao}
           </span>
         </div>
 
