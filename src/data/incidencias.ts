@@ -276,8 +276,8 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'Contraindicado em pacientes com suspeita de luxação aguda antes de descartá-la no AP. Caso o paciente tenha dor na abdução completa, abduza o membro a 45° mantendo a angulação do feixe.'
   },
   {
-    id: 'clavicula-ap-axial',
-    nome: 'Clavícula — AP e AP Axial',
+    id: 'clavicula-ap',
+    nome: 'Clavícula — AP (Ântero-Posterior)',
     regiao: 'Cintura & Tórax',
     subregiao: 'Ombro e Clavícula',
     tipo: 'Rotina',
@@ -286,10 +286,26 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dffCm: 100,
     tamanhoChassi: '24×30 cm transversal',
     gradeRecomendada: false,
-    raioCentral: 'No AP: perpendicular ao ponto médio da clavícula. No Axial: 15° a 30° cefálico.',
-    posicionamento: 'Paciente em ortostase ereta ou decúbito dorsal. Braços relaxados ao lado do corpo com cabeça voltada para o lado oposto.',
-    criteriosBontrager: 'No AP Axial, a clavícula projeta-se quase inteiramente acima dos arcos costais e ápice pulmonar, permitindo visualizar fraturas sem sobreposição.',
-    dicaPratica: 'Pacientes brevilíneos exigem maior angulação cefálica (30°), enquanto longilíneos exigem cerca de 15° a 20°.'
+    raioCentral: 'Perpendicular, incidindo no ponto médio da diáfise da clavícula.',
+    posicionamento: 'Paciente em ortostase ereta ou decúbito dorsal. Braços relaxados ao longo do corpo com cabeça voltada para o lado oposto. Ombros alinhados no mesmo plano frontal.',
+    criteriosBontrager: 'Clavícula demonstrada por inteiro, incluindo as articulações acromioclavicular (lateral) e esternoclavicular (medial). Metade medial projetada sobre os arcos costais superiores.',
+    dicaPratica: 'Realizar o disparo em expiração completa abaixa o gradil costal e melhora a nitidez e o contraste das corticais da clavícula.'
+  },
+  {
+    id: 'clavicula-axial',
+    nome: 'Clavícula — AP Axial',
+    regiao: 'Cintura & Tórax',
+    subregiao: 'Ombro e Clavícula',
+    tipo: 'Rotina',
+    espessuraMediaCm: 10,
+    masBase: 10.0,
+    dffCm: 100,
+    tamanhoChassi: '24×30 cm transversal',
+    gradeRecomendada: false,
+    raioCentral: 'Angulado de 15° a 30° cefálico, incidindo no ponto médio da clavícula.',
+    posicionamento: 'Paciente em ortostase ereta ou decúbito dorsal. Cabeça voltada para o lado oposto ao examinado para afastar a mandíbula do campo de interesse.',
+    criteriosBontrager: 'Clavícula projetada quase inteiramente acima dos arcos costais e do ápice pulmonar, permitindo visualizar fraturas sem sobreposição óssea.',
+    dicaPratica: 'Biotipos brevilíneos exigem maior angulação cefálica (cerca de 25° a 30°), enquanto biotipos longilíneos necessitam de 15° a 20° cefálico.'
   },
 
   // ==========================================
