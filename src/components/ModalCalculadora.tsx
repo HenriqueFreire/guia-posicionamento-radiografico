@@ -22,14 +22,12 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
   });
 
   const [espessura, setEspessura] = useState<number>(10);
-  const [comGesso, setComGesso] = useState<boolean>(false);
   const [copiado, setCopiado] = useState<boolean>(false);
 
   // Inicializa a espessura com o valor padrão da incidência
   useEffect(() => {
     if (incidencia) {
       setEspessura(incidencia.espessuraMediaCm);
-      setComGesso(false);
       setCopiado(false);
     }
   }, [incidencia]);
@@ -45,11 +43,8 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
   // ==========================================
   // FÓRMULAS DE FÍSICA RADIOLÓGICA
   // ==========================================
-  // 1. Tensão (kV): kV = 2e + C + compensação de gesso
-  let kvCalculado = 2 * espessura + constanteC;
-  if (comGesso) {
-    kvCalculado += 4;
-  }
+  // 1. Tensão (kV): kV = 2e + C
+  const kvCalculado = 2 * espessura + constanteC;
 
   // 2. Carga (mAs): Ajuste fino por variação de espessura (~10% por cm de desvio)
   const deltaE = espessura - incidencia.espessuraMediaCm;
@@ -57,9 +52,6 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
   if (fatorAjuste < 0.4) fatorAjuste = 0.4;
 
   let masCalculado = incidencia.masBase * fatorAjuste;
-  if (comGesso) {
-    masCalculado *= 1.3;
-  }
   masCalculado = Math.round(masCalculado * 10) / 10;
   if (masCalculado < 1.0) masCalculado = 1.0;
 
@@ -76,7 +68,7 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
     maSugerido,
     tempoS,
     usaGrade,
-    formulaKv: `(2 × ${espessura}) + ${constanteC}${comGesso ? ' + 4 (Gesso)' : ''} = ${kvCalculado} kV`,
+    formulaKv: `(2 × ${espessura}) + ${constanteC} = ${kvCalculado} kV`,
   };
 
   const handleCopiar = () => {
@@ -182,18 +174,6 @@ export const ModalCalculadora: React.FC<ModalCalculadoraProps> = ({
             </div>
           </div>
 
-          {/* Modificador: Gesso */}
-          <label className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-700 transition-colors">
-            <input
-              type="checkbox"
-              checked={comGesso}
-              onChange={(e) => setComGesso(e.target.checked)}
-              className="w-4 h-4 rounded text-cyan-500 focus:ring-cyan-500 bg-slate-800 border-slate-700 cursor-pointer"
-            />
-            <span className="text-xs font-medium text-slate-300">
-              Membro imobilizado com <strong className="text-white">gesso / tala</strong> (+4 kV e compensação)
-            </span>
-          </label>
 
           {/* Painel de Resultados Físicos */}
           <div className="p-4 rounded-xl bg-gradient-to-br from-cyan-950/40 via-slate-900 to-slate-900 border border-cyan-500/30 space-y-3">
