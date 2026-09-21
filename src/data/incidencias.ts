@@ -50,7 +50,54 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     raioCentral: 'Perpendicular, incidindo na 2ª Articulação Metacarpofalângica (2ª MCF).',
     posicionamento: 'Mão em perfil estrito a 90° (borda ulnar apoiada). Dedos abertos em leque sustentados por bloco radiotransparente para que nenhuma falange fique sobreposta.',
     criteriosBontrager: 'Falanges individualizadas em perfil verdadeiro. Metacarpos sobrepostos na maior parte de seus corpos, mas cabeças e bases visíveis para descartar luxações dorso-volares.',
-    dicaPratica: 'Evite que o polegar fique escondido atrás dos dedos; mantenha-o apontando para cima.'
+  },
+  {
+    id: 'polegar-ap',
+    nome: 'Polegar — AP (Ântero-Posterior)',
+    regiao: 'MMSS',
+    subregiao: 'Mão e Dedos',
+    tipo: 'Rotina',
+    espessuraMediaCm: 3,
+    masBase: 2.5,
+    dffCm: 100,
+    tamanhoChassi: '18×24 cm transversal dividido',
+    gradeRecomendada: false,
+    raioCentral: 'Perpendicular, incidindo na 1ª Articulação Metacarpofalângica (1ª MCF).',
+    posicionamento: 'Mão em rotação interna máxima, com punho rodado internamente até que a face dorsal do polegar repouse em contato com o chassi. Demais dedos afastados do campo.',
+    criteriosBontrager: 'Falanges distal e proximal e 1º metacarpo em AP verdadeiro sem rotação. Articulações interfalângica e metacarpofalângica abertas.',
+    dicaPratica: 'Se o paciente apresentar limitação articular na rotação interna do punho, incline ligeiramente o chassi com um coxim para facilitar o apoio dorsal.'
+  },
+  {
+    id: 'polegar-obliqua',
+    nome: 'Polegar — Oblíqua a 45°',
+    regiao: 'MMSS',
+    subregiao: 'Mão e Dedos',
+    tipo: 'Rotina',
+    espessuraMediaCm: 3,
+    masBase: 2.5,
+    dffCm: 100,
+    tamanhoChassi: '18×24 cm transversal dividido',
+    gradeRecomendada: false,
+    raioCentral: 'Perpendicular, incidindo na 1ª Articulação Metacarpofalângica (1ª MCF).',
+    posicionamento: 'Mão apoiada em posição de pronação natural sobre o chassi com dedos estendidos. A posição anatômica natural da mão já coloca o polegar em oblíqua de 45°.',
+    criteriosBontrager: 'Polegar obliquado a 45°. Tecidos moles e ossos da falange distal, proximal e metacarpo demonstrados sem sobreposição dos outros dedos.',
+    dicaPratica: 'O repouso natural da mão espalmada sobre a mesa posiciona o polegar a 45° sem necessidade de rotação forçada.'
+  },
+  {
+    id: 'polegar-perfil',
+    nome: 'Polegar — Perfil (Látero-Medial)',
+    regiao: 'MMSS',
+    subregiao: 'Mão e Dedos',
+    tipo: 'Rotina',
+    espessuraMediaCm: 3,
+    masBase: 2.5,
+    dffCm: 100,
+    tamanhoChassi: '18×24 cm transversal dividido',
+    gradeRecomendada: false,
+    raioCentral: 'Perpendicular, incidindo na 1ª Articulação Metacarpofalângica (1ª MCF).',
+    posicionamento: 'Mão em pronação suave com os dedos flexionados em arco até que a face lateral do polegar fique em contato paralelo com o receptor de imagem.',
+    criteriosBontrager: 'Polegar em perfil verdadeiro com aspecto côncavo da superfície palmar das falanges. Espaços articulares interfalângico e MCF abertos.',
+    dicaPratica: 'Flexionar suavemente os dedos restantes em forma de arco sustenta o polegar em perfil sem oscilação.'
   },
   {
     id: 'punho-pa',
@@ -70,7 +117,7 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
   },
   {
     id: 'punho-perfil',
-    nome: 'Punho — Perfil Rigoroso (Médio-Lateral)',
+    nome: 'Punho — Perfil (Médio-Lateral)',
     regiao: 'MMSS',
     subregiao: 'Punho e Carpo',
     tipo: 'Rotina',
@@ -80,7 +127,7 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     tamanhoChassi: '18×24 cm transversal dividido',
     gradeRecomendada: false,
     raioCentral: 'Perpendicular, incidindo no ponto médio da articulação do carpo.',
-    posicionamento: 'Cotovelo flexionado a 90°. Punho em perfil rigoroso (face ulnar apoiada na mesa), mão e antebraço alinhados no mesmo eixo sagital.',
+    posicionamento: 'Cotovelo flexionado a 90°. Punho em perfil (face ulnar apoiada na mesa), mão e antebraço alinhados no mesmo eixo sagital.',
     criteriosBontrager: 'Sobreposição exata dos processos estiloides do rádio e da ulna. Rádio distal, semilunar e capitato alinhados no mesmo eixo longitudinal.',
     dicaPratica: 'O ombro, o cotovelo e o punho devem estar estritamente na mesma altura do plano da mesa.'
   },
@@ -101,6 +148,22 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'Se a mão estiver em pronação, o rádio cruza por cima da ulna e invalida o AP verdadeiro.'
   },
   {
+    id: 'antebraco-perfil',
+    nome: 'Antebraço — Perfil (Látero-Medial)',
+    regiao: 'MMSS',
+    subregiao: 'Antebraço e Cotovelo',
+    tipo: 'Rotina',
+    espessuraMediaCm: 7,
+    masBase: 6.0,
+    dffCm: 100,
+    tamanhoChassi: '30×40 ou 35×43 cm longitudinal',
+    gradeRecomendada: false,
+    raioCentral: 'Perpendicular, incidindo no ponto médio da diáfise do antebraço.',
+    posicionamento: 'Cotovelo flexionado a 90°. Antebraço e punho apoiados na borda ulnar sobre o chassi (perfil verdadeiro). Ombro abaixado no mesmo nível horizontal da mesa.',
+    criteriosBontrager: 'Inclusão de ambas as articulações (cotovelo e punho). Rádio distal sobreposto à ulna distal e cabeça da ulna sobreposta ao rádio.',
+    dicaPratica: 'Ombro, cotovelo e punho devem estar exatamente no mesmo plano da mesa para evitar qualquer rotação no antebraço.'
+  },
+  {
     id: 'cotovelo-ap',
     nome: 'Cotovelo — AP (Ântero-Posterior)',
     regiao: 'MMSS',
@@ -118,7 +181,7 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
   },
   {
     id: 'cotovelo-perfil',
-    nome: 'Cotovelo — Perfil Rigoroso a 90°',
+    nome: 'Cotovelo — Perfil a 90°',
     regiao: 'MMSS',
     subregiao: 'Antebraço e Cotovelo',
     tipo: 'Rotina',
@@ -149,6 +212,38 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     dicaPratica: 'Rodar o corpo 35° a 45° em direção ao lado examinado projeta a glenoide de perfil sem sobreposição da cabeça do úmero.'
   },
   {
+    id: 'ombro-rotacao-interna',
+    nome: 'Ombro — AP com Rotação Interna',
+    regiao: 'MMSS',
+    subregiao: 'Ombro e Clavícula',
+    tipo: 'Rotina',
+    espessuraMediaCm: 13,
+    masBase: 14.0,
+    dffCm: 100,
+    tamanhoChassi: '24×30 cm transversal (com grade)',
+    gradeRecomendada: true,
+    raioCentral: 'Perpendicular, incidindo 2,5 cm inferiormente ao processo coracoide.',
+    posicionamento: 'Paciente em ortostase ou decúbito dorsal. Braço ao longo do corpo com rotação interna total do membro (dorso da mão apoiado contra a coxa), epicôndilos umerais perpendiculares ao plano do chassi.',
+    criteriosBontrager: 'Tubérculo menor projetado em perfil medial completo. Tubérculo maior sobreposto à cabeça do úmero. Contorno da cabeça umeral sobre a cavidade glenoide.',
+    dicaPratica: 'Garantir que os epicôndilos fiquem perpendiculares ao receptor de imagem é essencial para colocar o tubérculo menor em perfil verdadeiro.'
+  },
+  {
+    id: 'ombro-rotacao-externa',
+    nome: 'Ombro — AP com Rotação Externa',
+    regiao: 'MMSS',
+    subregiao: 'Ombro e Clavícula',
+    tipo: 'Rotina',
+    espessuraMediaCm: 13,
+    masBase: 14.0,
+    dffCm: 100,
+    tamanhoChassi: '24×30 cm transversal (com grade)',
+    gradeRecomendada: true,
+    raioCentral: 'Perpendicular, incidindo 2,5 cm inferiormente ao processo coracoide.',
+    posicionamento: 'Paciente em ortostase ou decúbito dorsal. Braço estendido com supinação da mão e rotação externa máxima até os epicôndilos umerais ficarem paralelos ao plano do receptor.',
+    criteriosBontrager: 'Tubérculo maior projetado em perfil lateral completo da cabeça do úmero. Espaço articular escapuloumeral aberto e tubérculo menor sobreposto anteriormente.',
+    dicaPratica: 'A rotação externa deve partir de toda a articulação do ombro com a palma da mão voltada para a frente, e não apenas do punho.'
+  },
+  {
     id: 'clavicula-ap-axial',
     nome: 'Clavícula — AP e AP Axial',
     regiao: 'Cintura & Tórax',
@@ -164,42 +259,10 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     criteriosBontrager: 'No AP Axial, a clavícula projeta-se quase inteiramente acima dos arcos costais e ápice pulmonar, permitindo visualizar fraturas sem sobreposição.',
     dicaPratica: 'Pacientes brevilíneos exigem maior angulação cefálica (30°), enquanto longilíneos exigem cerca de 15° a 20°.'
   },
-  {
-    id: 'esterno-rao',
-    nome: 'Esterno — RAO (Oblíqua Anterior Direita)',
-    regiao: 'Cintura & Tórax',
-    subregiao: 'Clavícula e Esterno',
-    tipo: 'Rotina',
-    espessuraMediaCm: 18,
-    masBase: 24.0,
-    dffCm: 100,
-    tamanhoChassi: '24×30 cm longitudinal (com grade)',
-    gradeRecomendada: true,
-    raioCentral: 'Perpendicular, incidindo no ponto médio do esterno (7 a 8 cm abaixo da incisura jugular), ligeiramente à esquerda da coluna.',
-    posicionamento: 'Paciente em OAD com 15° a 20° de rotação para projetar o esterno sobre a sombra radiopaca homogênea do coração.',
-    criteriosBontrager: 'Manúbrio, corpo esternal e processo xifoide visualizados sem sobreposição da coluna vertebral torácica.',
-    dicaPratica: 'Utilize técnica de respiração suave durante a exposição longa para borrar as costelas e destacar o esterno.'
-  },
 
   // ==========================================
   // MEMBROS INFERIORES (MMII)
   // ==========================================
-  {
-    id: 'pododactilos-ap',
-    nome: 'Pododáctilos (Dedos do Pé) — AP e Oblíqua',
-    regiao: 'MMII',
-    subregiao: 'Pé e Dedos',
-    tipo: 'Rotina',
-    espessuraMediaCm: 3,
-    masBase: 2.5,
-    dffCm: 100,
-    tamanhoChassi: '18×24 cm ou 24×30 cm dividido',
-    gradeRecomendada: false,
-    raioCentral: 'Angulado de 10° a 15° posteriormente (em direção ao calcâneo) incidindo na 3ª Articulação Metatarsofalângica (MTF).',
-    posicionamento: 'Joelho fletido, planta do pé apoiada no chassi. Na oblíqua, rodar a perna e o pé medialmente de 30° a 45°.',
-    criteriosBontrager: 'Falanges do 1º ao 5º dedo livres de sobreposição. Espaços articulares MTF e interfalângicos abertos pela angulação do feixe.',
-    dicaPratica: 'A angulação podálica de 10° a 15° compensa a inclinação natural das falanges e abre os espaços articulares.'
-  },
   {
     id: 'pe-ap',
     nome: 'Pé — AP (Dorsoplantar)',
@@ -247,6 +310,22 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     posicionamento: 'Perna estendida, pé em dorsiflexão forçada a 90° sustentado por faixa tracionada pelo próprio paciente.',
     criteriosBontrager: 'Calcâneo demonstrado da tuberosidade ao sustentáculo do tálus sem rotação. Articulação talocalcânea aberta.',
     dicaPratica: 'Se o paciente não conseguir fletir o pé a 90°, aumente a angulação do raio central além de 40° proporcionalmente.'
+  },
+  {
+    id: 'calcaneo-perfil',
+    nome: 'Calcâneo — Perfil (Látero-Medial)',
+    regiao: 'MMII',
+    subregiao: 'Pé e Tornozelo',
+    tipo: 'Rotina',
+    espessuraMediaCm: 7,
+    masBase: 6.0,
+    dffCm: 100,
+    tamanhoChassi: '18×24 cm longitudinal dividido',
+    gradeRecomendada: false,
+    raioCentral: 'Perpendicular, incidindo 2,5 cm distal ao maléolo medial, no centro do calcâneo.',
+    posicionamento: 'Paciente em decúbito lateral sobre o lado afetado. Joelho flexionado a 45°, pé em dorsiflexão neutra a 90° com a perna.',
+    criteriosBontrager: 'Calcâneo demonstrado integralmente em perfil, da tuberosidade à articulação calcaneocuboidea. Articulação subtalar e seio do tarso abertos.',
+    dicaPratica: 'Manter o pé a 90° com a perna evita a sobreposição do maléolo lateral e abre o seio do tarso para avaliação do Ângulo de Böhler.'
   },
   {
     id: 'tornozelo-ap-mortise',
@@ -308,7 +387,7 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     tamanhoChassi: '24×30 cm longitudinal (com ou sem grade)',
     gradeRecomendada: true,
     raioCentral: 'Incidindo 1,3 cm distal ao ápice da patela. 0° para pelve média (19 a 24 cm EIAS-mesa); 3° a 5° caudal para pelve < 19 cm; 3° a 5° cefálico para pelve > 24 cm.',
-    posicionamento: 'Decúbito dorsal, perna estendida rodada internamente 3° a 5° para posicionar a linha intercondilar rigorosamente paralela à mesa.',
+    posicionamento: 'Decúbito dorsal, perna estendida rodada internamente 3° a 5° para posicionar a linha intercondilar paralela à mesa.',
     criteriosBontrager: 'Espaço articular femorotibial medial e lateral simétrico e aberto. Patela centralizada entre os côndilos femorais.',
     dicaPratica: 'A rotação interna discreta de 3° a 5° evita a rotação externa natural do pé e alinha os côndilos femorais.'
   },
@@ -356,7 +435,7 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     tamanhoChassi: '35×43 cm transversal (com grade Bucky)',
     gradeRecomendada: true,
     raioCentral: 'Perpendicular, incidindo 5 cm abaixo do ponto médio entre as EIAS (ao nível da borda superior da sínfise púbica).',
-    posicionamento: 'Decúbito dorsal rigoroso, pernas estendidas com rotação interna de 15° a 20° dos pés para alinhar os colos femorais paralelos ao filme.',
+    posicionamento: 'Decúbito dorsal, pernas estendidas com rotação interna de 15° a 20° dos pés para alinhar os colos femorais paralelos ao filme.',
     criteriosBontrager: 'Bacia simétrica (forames obturatórios e asas ilíacas espelhadas). Trocanteres maiores em perfil total e trocanteres menores encobertos pela rotação interna.',
     dicaPratica: 'A rotação interna dos pés esconde os trocanteres menores. Se eles estiverem muito visíveis, faltou rotação interna!'
   },
