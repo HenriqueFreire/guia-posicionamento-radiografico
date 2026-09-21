@@ -8,8 +8,23 @@ import { RegiaoAnatomica, IncidenciaRadiografica, ParametrosCalculados } from '.
 import { Sparkles, Layers } from 'lucide-react';
 
 export function App() {
-  const [regiaoSelecionada, setRegiaoSelecionada] = useState<RegiaoAnatomica | 'TODOS'>('TODOS');
-  const [busca, setBusca] = useState<string>('');
+  const [regiaoSelecionada, setRegiaoSelecionada] = useState<RegiaoAnatomica | 'TODOS'>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const reg = params.get('regiao') as RegiaoAnatomica | null;
+      if (reg && ['MMSS', 'MMII', 'Cintura & Tórax', 'Bacia & Pelve'].includes(reg)) {
+        return reg;
+      }
+    }
+    return 'TODOS';
+  });
+  const [busca, setBusca] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('search') || '';
+    }
+    return '';
+  });
 
   // Estado do Modal da Calculadora
   const [incidenciaAtiva, setIncidenciaAtiva] = useState<IncidenciaRadiografica | null>(null);
@@ -25,15 +40,21 @@ export function App() {
       // Filtro de Região (selecionado via silhueta anatômica)
       const matchRegiao = regiaoSelecionada === 'TODOS' || item.regiao === regiaoSelecionada;
 
-      // Busca textual
-      const termo = busca.toLowerCase().trim();
+      // Busca textual insensível a acentos e maiúsculas/minúsculas
+      const normalizar = (str: string) =>
+        str
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase();
+
+      const termo = normalizar(busca.trim());
       const matchTexto =
         !termo ||
-        item.nome.toLowerCase().includes(termo) ||
-        item.subregiao.toLowerCase().includes(termo) ||
-        item.posicionamento.toLowerCase().includes(termo) ||
-        item.raioCentral.toLowerCase().includes(termo) ||
-        item.criteriosBontrager.toLowerCase().includes(termo);
+        normalizar(item.nome).includes(termo) ||
+        normalizar(item.subregiao).includes(termo) ||
+        normalizar(item.posicionamento).includes(termo) ||
+        normalizar(item.raioCentral).includes(termo) ||
+        normalizar(item.criteriosBontrager).includes(termo);
 
       return matchRegiao && matchTexto;
     });
