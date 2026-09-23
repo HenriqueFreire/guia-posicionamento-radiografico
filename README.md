@@ -19,7 +19,7 @@ Aplicativo web progressivo (**PWA**) moderno, responsivo e 100% offline-first de
   * Cálculo ajustado de **$mAs$**, sugerindo corrente (mA) e tempo de exposição em segundos ($s$).
   * Persistência da **Constante do Aparelho ($C$)** no navegador (`localStorage`).
   * **Alerta Inteligente ALARA / Grade Bucky**: indicação de mesa direta ($e \le 10\text{ cm}$) vs grade antidifusora ($e > 10\text{ cm}$ ou $kV > 60$).
-* 📋 **32 Protocolos Radiográficos Canônicos (Bontrager 10ª Edição)**:
+* 📋 **38 Protocolos Radiográficos Canônicos (Bontrager 10ª Edição)**:
   * Atlas fotográfico de posicionamento com indicação precisa do Raio Central (RC) e radiografia de controle.
   * Raio central (ponto anatômico e angulação), posicionamento do paciente, DFF, receptor de imagem e critérios de qualidade radiográfica.
 * ⚡ **PWA Offline-First**:

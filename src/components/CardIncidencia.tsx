@@ -124,7 +124,7 @@ export const CardIncidencia: React.FC<CardIncidenciaProps> = ({
             <div className="flex items-start gap-2">
               <Ruler size={14} className="text-cyan-400 shrink-0 mt-0.5" />
               <p>
-                <strong className="text-slate-200">Chassi:</strong> {incidencia.tamanhoChassi} Sobre a mesa • <strong className="text-slate-200">DFF:</strong> {incidencia.dffCm} cm
+                <strong className="text-slate-200">Chassi:</strong> {incidencia.tamanhoChassi} • <strong className="text-slate-200">DFF:</strong> {incidencia.dffCm} cm
               </p>
             </div>
 

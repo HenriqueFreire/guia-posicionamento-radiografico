@@ -153,7 +153,7 @@ export const HumanSilhouette: React.FC<HumanSilhouetteProps> = ({
           <g
             className="cursor-pointer transition-all duration-300 group"
             onClick={() => onSelecionarRegiao(isMMSS ? 'TODOS' : 'MMSS')}
-            onMouseEnter={() => setHoverRegiao('Membros Superiores (MMSS) — Dedos, Mão, Punho, Cotovelo, Ombro')}
+            onMouseEnter={() => setHoverRegiao('Membros Superiores (MMSS) — Dedos, Mão, Punho, Antebraço, Cotovelo, Úmero, Ombro')}
             onMouseLeave={() => setHoverRegiao(null)}
           >
             {/* Ombro e Braço Superior */}
@@ -180,7 +180,7 @@ export const HumanSilhouette: React.FC<HumanSilhouetteProps> = ({
           <g
             className="cursor-pointer transition-all duration-300 group"
             onClick={() => onSelecionarRegiao(isMMSS ? 'TODOS' : 'MMSS')}
-            onMouseEnter={() => setHoverRegiao('Membros Superiores (MMSS) — Dedos, Mão, Punho, Cotovelo, Ombro')}
+            onMouseEnter={() => setHoverRegiao('Membros Superiores (MMSS) — Dedos, Mão, Punho, Antebraço, Cotovelo, Úmero, Ombro')}
             onMouseLeave={() => setHoverRegiao(null)}
           >
             {/* Ombro e Braço Superior */}
