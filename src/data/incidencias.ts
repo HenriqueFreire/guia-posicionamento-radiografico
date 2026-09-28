@@ -653,6 +653,6 @@ export const INCIDENCIAS: IncidenciaRadiografica[] = [
     posicionamento: 'Paciente em decúbito dorsal, rodado em oblíqua posterior a 45° com o lado afetado ELEVADO em relação à mesa (apoiar o dorso e a pelve com cunha radiotransparente de 45°). Alinhar a articulação coxofemoral de interesse à linha central da mesa.',
     criteriosBontrager: 'Forame obturatório do lado de interesse amplamente aberto e sem escorço. Coluna posterior do acetábulo e rebordo (borda) anterior do acetábulo claramente demonstrados. Cabeça do fêmur centrada no acetábulo.',
     dicaPratica: 'Bontrager 10ª ed: Essencial no trauma pélvico de alta energia para diagnóstico de fratura da coluna posterior e parede anterior da fossa acetabular.',
-    imagemPosicionamento: '/images/posicionamentos/quadril-alar-judet.jpg',
+    imagemPosicionamento: '/images/posicionamentos/quadril-obturatriz-judet.png',
   }
 ];
