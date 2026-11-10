@@ -108,7 +108,7 @@ export const HumanSilhouette: React.FC<HumanSilhouetteProps> = ({
           <g
             className="cursor-pointer transition-all duration-300"
             onClick={() => onSelecionarRegiao(isCinturaTorax ? 'TODOS' : 'Cintura & Tórax')}
-            onMouseEnter={() => setHoverRegiao('Cintura Escapular & Tórax (Clavícula, AC, Esterno)')}
+            onMouseEnter={() => setHoverRegiao('Cintura Escapular & Tórax (Tórax, Clavícula, AC, Esterno)')}
             onMouseLeave={() => setHoverRegiao(null)}
           >
             <path
